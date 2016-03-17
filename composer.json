@@ -14,8 +14,14 @@
             "email": "taylorotwell@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/DHNCarlos/ClassPreloader.git"
+        }
+    ],
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=5.4.16",
         "ext-mbstring": "*",
         "ext-openssl": "*",
         "classpreloader/classpreloader": "~2.0|~3.0",
