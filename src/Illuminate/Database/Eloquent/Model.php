@@ -32,7 +32,6 @@ use Illuminate\Database\ConnectionResolverInterface as Resolver;
 
 abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializable, QueueableEntity, UrlRoutable
 {
-    const CLASSNAME = __CLASS__;
     /**
      * The connection name for the model.
      *
