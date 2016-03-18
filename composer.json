@@ -24,7 +24,7 @@
         "php": ">=5.4.16",
         "ext-mbstring": "*",
         "ext-openssl": "*",
-        "classpreloader/classpreloader": "3.0.3",
+        "classpreloader/classpreloader": "5.0.3",
         "danielstjules/stringy": "~1.8",
         "doctrine/inflector": "~1.0",
         "jeremeamia/superclosure": "~2.0",
