@@ -599,7 +599,8 @@ class Guard implements GuardContract
      */
     protected function createRememberTokenIfDoesntExist(UserContract $user)
     {
-        if (empty($user->getRememberToken())) {
+        $rememberToken = $user->getRememberToken();
+        if (empty($rememberToken)) {
             $this->refreshRememberToken($user);
         }
     }
