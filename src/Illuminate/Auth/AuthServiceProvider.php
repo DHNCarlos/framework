@@ -9,6 +9,7 @@ use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
 class AuthServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *

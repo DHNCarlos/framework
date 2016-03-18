@@ -8,6 +8,7 @@ use Illuminate\Contracts\View\Factory as ViewFactory;
 
 class ShareErrorsFromSession
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The view factory implementation.
      *

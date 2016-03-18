@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 
 class DatabaseServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Bootstrap the application events.
      *

@@ -7,6 +7,7 @@ namespace Illuminate\Support\Facades;
  */
 class Schema extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get a schema builder instance for a connection.
      *

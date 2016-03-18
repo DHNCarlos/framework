@@ -10,6 +10,7 @@ use Illuminate\View\Compilers\BladeCompiler;
 
 class ViewServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *

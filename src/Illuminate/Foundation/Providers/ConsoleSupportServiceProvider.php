@@ -6,6 +6,7 @@ use Illuminate\Support\AggregateServiceProvider;
 
 class ConsoleSupportServiceProvider extends AggregateServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

@@ -7,6 +7,7 @@ use Illuminate\Support\ServiceProvider;
 
 class MailServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

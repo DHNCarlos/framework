@@ -8,6 +8,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class CheckForMaintenanceMode
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The application implementation.
      *

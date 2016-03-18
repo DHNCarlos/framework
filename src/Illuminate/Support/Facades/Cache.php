@@ -8,6 +8,7 @@ namespace Illuminate\Support\Facades;
  */
 class Cache extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get the registered name of the component.
      *

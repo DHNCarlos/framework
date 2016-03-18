@@ -14,6 +14,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class StartSession
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The session manager.
      *

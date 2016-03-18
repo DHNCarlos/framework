@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class CookieServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *

@@ -7,6 +7,7 @@ use Illuminate\Auth\Passwords\DatabaseTokenRepository as DbRepository;
 
 class PasswordResetServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

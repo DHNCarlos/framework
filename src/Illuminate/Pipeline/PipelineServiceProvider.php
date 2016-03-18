@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class PipelineServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

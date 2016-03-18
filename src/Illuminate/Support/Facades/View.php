@@ -7,6 +7,7 @@ namespace Illuminate\Support\Facades;
  */
 class View extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get the registered name of the component.
      *

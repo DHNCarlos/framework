@@ -7,6 +7,7 @@ namespace Illuminate\Support\Facades;
  */
 class Cookie extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Determine if a cookie exists on the request.
      *

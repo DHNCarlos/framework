@@ -8,6 +8,7 @@ use Illuminate\Cache\Console\CacheTableCommand;
 
 class CacheServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

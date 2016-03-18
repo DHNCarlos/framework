@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class PaginationServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *

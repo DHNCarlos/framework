@@ -7,6 +7,7 @@ namespace Illuminate\Support\Facades;
  */
 class Password extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Constant representing a successfully sent reminder.
      *

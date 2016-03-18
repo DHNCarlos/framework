@@ -20,6 +20,7 @@ use Illuminate\Queue\Failed\DatabaseFailedJobProvider;
 
 class QueueServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Indicates if loading of the provider is deferred.
      *

@@ -7,6 +7,7 @@ use Illuminate\Contracts\Auth\Guard;
 
 class AuthenticateWithBasicAuth
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The guard instance.
      *

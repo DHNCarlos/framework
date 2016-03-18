@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Http;
 
 interface Kernel
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Bootstrap the application for HTTP requests.
      *

@@ -7,6 +7,7 @@ use Illuminate\Contracts\Validation\ValidatesWhenResolved;
 
 class ValidationServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *

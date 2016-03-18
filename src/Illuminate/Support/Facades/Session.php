@@ -8,6 +8,7 @@ namespace Illuminate\Support\Facades;
  */
 class Session extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get the registered name of the component.
      *

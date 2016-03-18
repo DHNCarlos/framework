@@ -6,6 +6,7 @@ use Exception;
 
 interface ExceptionHandler
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Report or log an exception.
      *

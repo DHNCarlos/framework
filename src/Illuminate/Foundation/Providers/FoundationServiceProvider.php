@@ -6,6 +6,7 @@ use Illuminate\Support\AggregateServiceProvider;
 
 class FoundationServiceProvider extends AggregateServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The provider class names.
      *

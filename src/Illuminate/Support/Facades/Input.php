@@ -7,6 +7,7 @@ namespace Illuminate\Support\Facades;
  */
 class Input extends Facade
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get an item from the input data.
      *

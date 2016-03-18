@@ -7,6 +7,7 @@ use Illuminate\Contracts\Cookie\QueueingFactory as CookieJar;
 
 class AddQueuedCookiesToResponse
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The cookie jar instance.
      *

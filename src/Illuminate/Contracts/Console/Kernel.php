@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Console;
 
 interface Kernel
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Handle an incoming console command.
      *
