@@ -98,7 +98,7 @@ if (! function_exists('auth')) {
      */
     function auth()
     {
-        return app(Guard::class);
+        return app(Guard::CLASSNAME);
     }
 }
 
@@ -195,7 +195,7 @@ if (! function_exists('cookie')) {
      */
     function cookie($name = null, $value = null, $minutes = 0, $path = null, $domain = null, $secure = false, $httpOnly = true)
     {
-        $cookie = app(CookieFactory::class);
+        $cookie = app(CookieFactory::CLASSNAME);
 
         if (is_null($name)) {
             return $cookie;
@@ -273,7 +273,7 @@ if (! function_exists('dispatch')) {
      */
     function dispatch($job)
     {
-        return app(Dispatcher::class)->dispatch($job);
+        return app(Dispatcher::CLASSNAME)->dispatch($job);
     }
 }
 
@@ -368,7 +368,7 @@ if (! function_exists('factory')) {
      */
     function factory()
     {
-        $factory = app(EloquentFactory::class);
+        $factory = app(EloquentFactory::CLASSNAME);
 
         $arguments = func_get_args();
 
@@ -480,7 +480,7 @@ if (! function_exists('policy')) {
      */
     function policy($class)
     {
-        return app(Gate::class)->getPolicyFor($class);
+        return app(Gate::CLASSNAME)->getPolicyFor($class);
     }
 }
 
@@ -589,7 +589,7 @@ if (! function_exists('response')) {
      */
     function response($content = '', $status = 200, array $headers = [])
     {
-        $factory = app(ResponseFactory::class);
+        $factory = app(ResponseFactory::CLASSNAME);
 
         if (func_num_args() === 0) {
             return $factory;
@@ -727,7 +727,7 @@ if (! function_exists('url')) {
      */
     function url($path = null, $parameters = [], $secure = null)
     {
-        return app(UrlGenerator::class)->to($path, $parameters, $secure);
+        return app(UrlGenerator::CLASSNAME)->to($path, $parameters, $secure);
     }
 }
 
@@ -742,7 +742,7 @@ if (! function_exists('view')) {
      */
     function view($view = null, $data = [], $mergeData = [])
     {
-        $factory = app(ViewFactory::class);
+        $factory = app(ViewFactory::CLASSNAME);
 
         if (func_num_args() === 0) {
             return $factory;

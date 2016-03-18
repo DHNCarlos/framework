@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Auth;
 
 interface Guard
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Determine if the current user is authenticated.
      *

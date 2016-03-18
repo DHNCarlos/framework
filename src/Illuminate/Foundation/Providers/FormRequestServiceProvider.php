@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class FormRequestServiceProvider extends ServiceProvider
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Register the service provider.
      *
@@ -30,7 +31,7 @@ class FormRequestServiceProvider extends ServiceProvider
             $this->app->resolving(function (FormRequest $request, $app) {
                 $this->initializeRequest($request, $app['request']);
 
-                $request->setContainer($app)->setRedirector($app->make(Redirector::class));
+                $request->setContainer($app)->setRedirector($app->make(Redirector::CLASSNAME));
             });
         });
     }

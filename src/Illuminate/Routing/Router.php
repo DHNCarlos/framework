@@ -21,6 +21,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 class Router implements RegistrarContract
 {
     use Macroable;
+    const CLASSNAME = __CLASS__;
 
     /**
      * The event dispatcher instance.

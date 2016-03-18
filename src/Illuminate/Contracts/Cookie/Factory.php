@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Cookie;
 
 interface Factory
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Create a new cookie instance.
      *

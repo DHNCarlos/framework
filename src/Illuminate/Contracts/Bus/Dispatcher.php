@@ -7,6 +7,7 @@ use ArrayAccess;
 
 interface Dispatcher
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Marshal a command and dispatch it to its appropriate handler.
      *

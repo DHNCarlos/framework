@@ -8,6 +8,7 @@ use Symfony\Component\Finder\Finder;
 
 class Factory implements ArrayAccess
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The Faker instance for the builder.
      *

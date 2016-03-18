@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Routing;
 
 interface UrlGenerator
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Generate a absolute URL to the given path.
      *

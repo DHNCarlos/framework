@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Auth\Access;
 
 interface Gate
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Determine if a given ability has been defined.
      *

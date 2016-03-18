@@ -7,6 +7,7 @@ use Illuminate\Session\Store as SessionStore;
 
 class Redirector
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The URL generator instance.
      *

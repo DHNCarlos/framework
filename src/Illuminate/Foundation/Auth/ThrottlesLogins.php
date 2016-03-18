@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Lang;
 
 trait ThrottlesLogins
 {
+    static $className = __CLASS__;
     /**
      * Determine if the user has too many failed login attempts.
      *
@@ -16,7 +17,7 @@ trait ThrottlesLogins
      */
     protected function hasTooManyLoginAttempts(Request $request)
     {
-        return app(RateLimiter::class)->tooManyAttempts(
+        return app(RateLimiter::CLASSNAME)->tooManyAttempts(
             $this->getThrottleKey($request),
             $this->maxLoginAttempts(), $this->lockoutTime() / 60
         );
@@ -30,7 +31,7 @@ trait ThrottlesLogins
      */
     protected function incrementLoginAttempts(Request $request)
     {
-        app(RateLimiter::class)->hit(
+        app(RateLimiter::CLASSNAME)->hit(
             $this->getThrottleKey($request)
         );
     }
@@ -43,7 +44,7 @@ trait ThrottlesLogins
      */
     protected function retriesLeft(Request $request)
     {
-        $attempts = app(RateLimiter::class)->attempts(
+        $attempts = app(RateLimiter::CLASSNAME)->attempts(
             $this->getThrottleKey($request)
         );
 
@@ -58,7 +59,7 @@ trait ThrottlesLogins
      */
     protected function sendLockoutResponse(Request $request)
     {
-        $seconds = app(RateLimiter::class)->availableIn(
+        $seconds = app(RateLimiter::CLASSNAME)->availableIn(
             $this->getThrottleKey($request)
         );
 
@@ -90,7 +91,7 @@ trait ThrottlesLogins
      */
     protected function clearLoginAttempts(Request $request)
     {
-        app(RateLimiter::class)->clear(
+        app(RateLimiter::CLASSNAME)->clear(
             $this->getThrottleKey($request)
         );
     }

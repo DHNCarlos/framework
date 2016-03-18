@@ -109,7 +109,7 @@ trait ValidatesRequests
      */
     protected function getRedirectUrl()
     {
-        return app(UrlGenerator::class)->previous();
+        return app(UrlGenerator::CLASSNAME)->previous();
     }
 
     /**
@@ -119,7 +119,7 @@ trait ValidatesRequests
      */
     protected function getValidationFactory()
     {
-        return app(Factory::class);
+        return app(Factory::CLASSNAME);
     }
 
     /**

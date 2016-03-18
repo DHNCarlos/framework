@@ -6,6 +6,7 @@ use Illuminate\Contracts\Cache\Repository as Cache;
 
 class RateLimiter
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The cache store implementation.
      *

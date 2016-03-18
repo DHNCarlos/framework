@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Routing;
 
 interface ResponseFactory
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Return a new response from the application.
      *

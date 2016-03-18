@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Validation;
 
 interface Factory
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Create a new Validator instance.
      *

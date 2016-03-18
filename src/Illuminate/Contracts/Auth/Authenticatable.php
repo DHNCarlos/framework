@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\Auth;
 
 interface Authenticatable
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Get the unique identifier for the user.
      *

@@ -4,6 +4,7 @@ namespace Illuminate\Contracts\View;
 
 interface Factory
 {
+    const CLASSNAME = __CLASS__;
     /**
      * Determine if a given view exists.
      *

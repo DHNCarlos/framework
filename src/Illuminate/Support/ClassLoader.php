@@ -4,6 +4,7 @@ namespace Illuminate\Support;
 
 class ClassLoader
 {
+    const CLASSNAME = __CLASS__;
     /**
      * The registered directories.
      *
@@ -62,7 +63,7 @@ class ClassLoader
     public static function register()
     {
         if (! static::$registered) {
-            static::$registered = spl_autoload_register([static::class, 'load']);
+            static::$registered = spl_autoload_register([static::CLASSNAME, 'load']);
         }
     }
 

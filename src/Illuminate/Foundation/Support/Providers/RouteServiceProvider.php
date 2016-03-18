@@ -47,7 +47,7 @@ class RouteServiceProvider extends ServiceProvider
             return;
         }
 
-        $this->app[UrlGenerator::class]->setRootControllerNamespace($this->namespace);
+        $this->app[UrlGenerator::CLASSNAME]->setRootControllerNamespace($this->namespace);
     }
 
     /**
@@ -80,7 +80,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function loadRoutesFrom($path)
     {
-        $router = $this->app->make(Router::class);
+        $router = $this->app->make(Router::CLASSNAME);
 
         if (is_null($this->namespace)) {
             return require $path;
@@ -110,6 +110,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function __call($method, $parameters)
     {
-        return call_user_func_array([$this->app->make(Router::class), $method], $parameters);
+        return call_user_func_array([$this->app->make(Router::CLASSNAME), $method], $parameters);
     }
 }
